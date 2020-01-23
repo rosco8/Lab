@@ -1,5 +1,3 @@
-Read me to contain a bunch of info about the project.
+# Software Engineering Methods
 
-Finn test commit
-
-Rob test commit......
+[![Build Status](https://travis-ci.com/rosco8/Lab.svg?token=kp4hzApjYYMN8qiDXC8y&branch=master)](https://travis-ci.com/rosco8/Lab)
