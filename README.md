@@ -7,8 +7,8 @@
 
 #License 
 
-- License [![LICENSE](https://img.shields.io/github/license/rosco8/lab/sem.svg?style=flat-square)](https://github.com/rosco8/sem/blob/master/LICENSE)
+- License [![LICENSE](https://img.shields.io/github/license/rosco8/sem.svg?style=flat-square)](https://github.com/rosco8/sem/blob/master/LICENSE)
 
 
 #Release
-- Release [![Releases](https://img.shields.io/github/release/rosco8/lab/sem/all.svg?style=flat-square)](https://github.com/rosco8/sem/releases)
+- Release [![Releases](https://img.shields.io/github/release/rosco8/sem/all.svg?style=flat-square)](https://github.com/rosco8/sem/releases)
