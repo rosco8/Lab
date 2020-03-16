@@ -12,7 +12,3 @@
 
 #Release
 - Release [![Releases](https://img.shields.io/github/release/rosco8/sem/all.svg?style=flat-square)](https://github.com/rosco8/sem/releases)
-
-# Use Case Diagram
-
-![Use Case Diagram](images/Use_Case_UML.pdf)
