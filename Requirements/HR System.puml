@@ -1,0 +1,33 @@
+@startuml
+:HR Advisor: as Admin
+:Department Manager: as Manager
+
+(CRUD employee information) as (Start)
+(Produce Reports) as (Use)
+(Payment information) as (Payment)
+(Facilitate Promotion Request) as (Promotion)
+
+Admin -> (Start)
+
+Admin -> (Use)
+
+Admin -> (Payment)
+
+Admin -> (Promotion)
+
+Manager -> (Start)
+
+Manager -> (Use)
+
+(Start) -> (Payment)
+
+(Start) -> (Promotion)
+
+note right of (Start)
+General access to the application data.
+end note
+
+note "Employee information\ncontains financial data." as N2
+(Start) .. N2
+N2 .. (Use)
+@enduml
