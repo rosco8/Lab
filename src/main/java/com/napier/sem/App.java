@@ -13,7 +13,15 @@ public class App
         App a = new App();
 
         // Connect to database
-        a.connect("localhost:33060");
+        if(args.length < 1)
+        {
+            a.connect("localhost:33060");
+        }
+        else
+            {
+                a.connect(args[0]);
+            }
+
 
         Department dept = a.getDepartment("Sales");
         ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
@@ -81,6 +89,24 @@ public class App
             {
                 System.out.println("Error closing connection to database");
             }
+        }
+    }
+
+    public void addEmployee(Employee emp)
+    {
+        try
+        {
+            Statement stmt = con.createStatement();
+            String strUpdate =
+                    "INSERT INTO employees (emp_no, first_name, last_name, birth_date, gender, hire_date) " +
+                            "VALUES (" + emp.emp_no + ", '" + emp.first_name + "', '" + emp.last_name + "', " +
+                            "'9999-01-01', 'M', '9999-01-01')";
+            stmt.execute(strUpdate);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+            System.out.println("Failed to add employee");
         }
     }
 
